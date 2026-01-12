@@ -36,7 +36,7 @@ The application automatically organizes files into the following categories:
 1. Clone the repository or download the source code:
    ```bash
    git clone https://github.com/eaf-microservice/files_organization.git
-   cd organisateur
+   cd files_organization
    ```
 
 2. Create a virtual environment (recommended):
@@ -157,5 +157,6 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ---
 
 **Note**: This application is designed to help organize files efficiently. Always ensure you have backups of important data before running file organization operations.
+
 
 
