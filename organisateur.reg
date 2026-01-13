@@ -1,14 +1,12 @@
 Windows Registry Editor Version 5.00
 
-; This registry file adds Organisateur to the startup programs for the current user.
+; This registry file adds Files organizer to the startup programs for the current user.
 ; 
-; IMPORTANT: You must replace the path to main.exe with the correct installation path
-; of your application. In Inno Setup, it's often better to use the [Registry]
-; section to handle this automatically using constants like {app}.
-; 
-; Example [Registry] section for Inno Setup:
-; [Registry]
-; Root: HKCU; Subkey: "Software\Microsoft\Windows\CurrentVersion\Run"; ValueType: string; ValueName: "Organisateur"; ValueData: "{app}\main.exe"; Flags: uninsdeletevalue
+Windows Registry Editor Version 5.00
 
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]
-"Organisateur"="C:\\Program Files\\Organisateur\\main.exe"
+[HKEY_CLASSES_ROOT\Directory\shell\OrganizeFiles]
+@="Organize Files"
+"Icon"="C:\Program Files (x86)\File Organizer\File organizer.exe",0"
+
+[HKEY_CLASSES_ROOT\Directory\shell\OrganizeFiles\command]
+@="C:\Program Files (x86)\File Organizer\File organizer.exe" "%1"
