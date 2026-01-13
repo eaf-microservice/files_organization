@@ -86,12 +86,12 @@ The application automatically organizes files into the following categories:
 ## 📁 Project Structure
 
 ```
-organisateur/
-├── main.py              # Main application file
-├── requirements.txt     # Python dependencies
-├── README.md           # This file
-├── assets/             # Application assets (icons, etc.)
-└── venv/               # Virtual environment (not included in git)
+files_organization/
+   ├── main.py              # Main application file
+   ├── requirements.txt     # Python dependencies
+   ├── README.md           # This file
+   ├── assets/             # Application assets (icons, etc.)
+   └── venv/               # Virtual environment (not included in git)
 ```
 
 ## 🛠️ Requirements
@@ -146,13 +146,13 @@ See `requirements.txt` for the complete list of dependencies.
 
 ## 📄 Version
 
-**Current Version**: 1.0.0
+**Current Version**: 1.0.2
 
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-© 2026 EAF microservices - File Organizer
+© 2026 EAF microservices - Files Organizer
 
 ## 🤝 Contributing
 
@@ -166,4 +166,5 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ---
 
 **Note**: This application is designed to help organize files efficiently. Always ensure you have backups of important data before running file organization operations.
+
 
