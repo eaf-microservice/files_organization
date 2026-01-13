@@ -6,11 +6,12 @@ A simple and efficient desktop application built with PyQt6 to automatically org
 
 - **Automatic File Organization**: Organize files by their extensions into predefined categories
 - **User-Friendly GUI**: Modern and intuitive interface built with PyQt6
-- **Real-Time Progress Tracking**: See live updates as files are being organized
+- **Real-Time Progress Tracking**: See live updates as files are being organized with a progress bar.
 - **Thread-Safe Operations**: File organization runs in a separate thread to keep the UI responsive
 - **Multiple File Categories**: Support for Images, Documents, Videos, Audio, Programs, Compressed files, and more
 - **Folder Selection**: Easy folder browsing and selection dialog
 - **Error Handling**: Comprehensive error handling with user-friendly messages
+- **Windows Context Menu Integration**: Right-click on any folder in Windows Explorer to organize it directly.
 
 ## 🎯 Supported File Categories
 
@@ -36,7 +37,7 @@ The application automatically organizes files into the following categories:
 1. Clone the repository or download the source code:
    ```bash
    git clone https://github.com/eaf-microservice/files_organization.git
-   cd files_organization
+   cd organisateur
    ```
 
 2. Create a virtual environment (recommended):
@@ -61,6 +62,8 @@ The application automatically organizes files into the following categories:
 
 ## 💻 Usage
 
+### From the Application
+
 1. Run the application:
    ```bash
    python main.py
@@ -70,9 +73,15 @@ The application automatically organizes files into the following categories:
 
 3. Once a folder is selected, click the **"Organize Files"** button to start the organization process
 
-4. Watch the progress in the status log as files are moved to their respective categories
+4. Watch the progress in the status log and the progress bar as files are moved to their respective categories
 
 5. A success message will appear when the organization is complete
+
+### From Windows Explorer Context Menu
+
+1.  After installing the application using the installer (which registers the context menu item), right-click on any folder in Windows Explorer.
+2.  Select the **"Organiser avec l'application"** option from the context menu.
+3.  The File Organizer application will launch and automatically start organizing the selected folder.
 
 ## 📁 Project Structure
 
@@ -157,6 +166,3 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ---
 
 **Note**: This application is designed to help organize files efficiently. Always ensure you have backups of important data before running file organization operations.
-
-
-
