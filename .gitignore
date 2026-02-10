@@ -1,0 +1,10 @@
+venv/
+.venv
+.vscode/
+.qodo/
+.zencoder/
+__pycache__/
+.env
+*.pyc
+dist/
+build/
