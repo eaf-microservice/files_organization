@@ -127,7 +127,7 @@ class MainWindow(QMainWindow):
             self.set_selected_folder(args[1])
 
     def init_ui(self):
-        self.setWindowTitle("File Organizer")
+        self.setWindowTitle("Files Organizer")
         self.setWindowIcon(QIcon("assets/icon.png"))
         self.setGeometry(100, 100, 600, 500)
         
@@ -140,7 +140,7 @@ class MainWindow(QMainWindow):
         central_widget.setLayout(layout)
         
         # Title
-        title = QLabel("File Organizer")
+        title = QLabel("Files Organizer")
         title_font = QFont()
         title_font.setPointSize(18)
         title_font.setBold(True)
@@ -267,7 +267,7 @@ class MainWindow(QMainWindow):
         # Disable button during organization
         self.organize_btn.setEnabled(False)
         self.status_log.clear()
-        self.status_log.append("Starting file organization...\n")
+        self.status_log.append("Starting files organization...\n")
 
         # Create and show progress dialog
         self.progress_dialog = ProgressDialog(self)
@@ -305,7 +305,7 @@ class MainWindow(QMainWindow):
     
     def show_about(self):
         about_text = """
-        <h2>File Organizer</h2>
+        <h2>Files Organizer</h2>
         <h3>By: Fouad El Azbi</h3>
         <h3>Company: EAF microservices</h3>
         <h3>Email: EAF.microservice@gmail.com</h3>
@@ -315,12 +315,12 @@ class MainWindow(QMainWindow):
         <h3>Features:</h3>
         <ul>
             <li>Organize files by type automatically</li>
-            <li>Support for multiple file categories</li>
+            <li>Support for multiple files categories</li>
             <li>Real-time progress tracking</li>
             <li>User-friendly interface</li>
         </ul>
         
-        <h3>File Categories:</h3>
+        <h3>Files Categories:</h3>
         <ul>
             <li><b>Images:</b> JPG, JPEG, PNG, GIF, BMP</li>
             <li><b>Documents:</b> PDF, DOCX, DOC, TXT, XLSX, XLS, PPTX, PPT</li>
@@ -332,10 +332,10 @@ class MainWindow(QMainWindow):
         </ul>
         
         
-        <p>EAF microservices © 2026 File Organizer</p>
+        <p>EAF microservices © 2026 Files Organizer</p>
         """
         
-        QMessageBox.about(self, "About File Organizer", about_text)
+        QMessageBox.about(self, "About Files Organizer", about_text)
 
 
 def main():
